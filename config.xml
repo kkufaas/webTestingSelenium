@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <test thread-count="5" name="Test">
+
+        <parameter name="Browser" value="Firefox" />
+        <parameter name="SeleniumDriverPathFirefox" value="C:/geckodriver/geckodriver.exe" />
+        <parameter name="SeleniumDriverPathChrome" value="C:/chromedriver/chromedriver.exe" />
+        <parameter name="URL" value="https://transperfect.com" />
+        <classes>
+            <class name="ui_tests.SiteTest" /> <!-- Remember to correctly reference the class of the .javascript you want to run. (Package first and class after that) -->
+        </classes>
+
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
